@@ -1,0 +1,37 @@
+$containerWidth: 1152px;
+$baseFontSize: 16px;
+$desctops: 940px;
+$tablets: 768px;
+$phones: 468px;
+
+
+@import "media.scss";
+@import url('"//normalize-css.googlecode.com/svn/trunk/normalize.css"');
+@import 'layout/layout.scss';
+
+@import 'layout/section.scss';
+@import 'layout/hero.scss';
+@import 'layout/player.scss';
+@import 'layout/voting.scss';
+@import 'layout/btn.scss';
+@import 'layout/solution.scss';
+@import 'layout/agent.scss';
+@import 'layout/container.scss';
+@import 'layout/indicators.scss';
+@import 'layout/about.scss';
+@import 'layout/link.scss';
+@import 'layout/price.scss';
+@import 'layout/franchise.scss';
+@import 'layout/photo.scss';
+@import 'layout/form.scss';
+@import 'layout/radio.scss';
+@import 'layout/order.scss';
+@import 'layout/party.scss';
+@import 'layout/swiper.scss';
+
+.beboss-footer {
+
+  @include tablets {
+    display: none;
+  }
+} 

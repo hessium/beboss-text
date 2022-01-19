@@ -1,0 +1,49 @@
+.form {
+
+  &__row {
+    @include phones {
+      width: 295px;
+    }
+    
+  }
+
+  &__block {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 6px; 
+    margin-bottom: rem(8px);
+    padding: rem(9px);
+    height: rem(42px);
+    font-size: rem(16px);
+    max-width: 91%; 
+    background: white;
+    min-width: 100%;
+
+    &--input {
+      border: none;
+      width: 91%;
+      
+    &:focus-visible{
+      outline: none;
+      }
+    }
+  }
+    &__input {
+      border: none;
+      width: 83%;
+      &--textarea{
+        width: 100%;
+        padding: 9px 12px 15px;
+        height: rem(86px);
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        border-radius: 6px;
+
+        @include phones {
+          height: 86px;
+        }
+      }   
+  } 
+
+  &__icon {
+    width: 7%;
+  }
+} 

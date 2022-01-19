@@ -1,0 +1,11 @@
+.agent {
+  display: flex;
+  margin-bottom: rem(16px);
+  &__photo {
+    margin-right: rem(8px);
+  }
+
+  @include phones {
+    font-size: 16px;
+  }
+}

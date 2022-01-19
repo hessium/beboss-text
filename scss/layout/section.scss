@@ -1,0 +1,18 @@
+.section {
+ 
+
+  &__hero {
+   background:  linear-gradient(180deg, rgba(236, 238, 242, 0), #ECEEF2   );
+  }
+
+  &__solution {
+    background: linear-gradient(180deg, #ECEEF2 50%, white 50%);
+    height: 100%;
+
+    @include phones {
+      background: white;
+      margin-top: 32px;
+    }
+  }
+}
+

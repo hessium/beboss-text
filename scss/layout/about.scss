@@ -1,0 +1,27 @@
+.about {
+  margin-bottom: rem(32px);
+
+  &__title {
+    margin-bottom: rem(16px);
+    font-size: rem(24px);
+    line-height: rem(32px);
+
+    @include phones {
+      font-size: 18px;
+    }
+  }
+
+  &__text {
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    padding-top: rem(24px);
+  }
+
+  &__desc {
+    margin-bottom: rem(16px);
+
+    @include phones {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+}

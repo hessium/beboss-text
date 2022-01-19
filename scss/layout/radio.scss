@@ -1,0 +1,44 @@
+.radio {
+  max-width:100%;
+  height: rem(80px);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  margin-bottom: rem(8px);
+
+  @include phones {
+    width: 295px;
+    height: 80px;
+  }
+
+  &__block {
+    max-width: 100%;
+    padding: rem(19px) rem(16px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__input {
+    margin-right: rem(8px);
+    width: rem(32px);
+    height: rem(32px);
+  }
+
+  &__checkbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &--desc {
+      margin-bottom: 0;
+    }
+  }
+
+  &__desc {
+    width: rem(89px);
+    font-size: rem(14px);
+    text-align: right;
+    line-height: rem(20px);
+    color: rgba(0, 0, 0, 0.52);
+  }
+}

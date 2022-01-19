@@ -1,0 +1,41 @@
+.party {
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  max-width: 100%;  
+  &__content {
+    margin-bottom: rem(32px);
+
+    @include phones {
+      display: flex;
+      justify-content: left;
+      align-items: center;
+    }
+  }
+
+  &__title {
+    font-size: rem(32px);
+    line-height: rem(40px);
+    margin-top: rem(40px);
+    margin-bottom: rem(32px);
+
+    @include phones {
+      font-size: 23px;
+      line-height: 32px;
+      padding-left: 16px;
+    }
+  }
+
+  &__list {
+    display: flex;
+
+    @include phones {
+      display: none;
+    }
+
+    &--item {
+      margin-right: rem(32px);
+      max-width: 33%;  
+    }
+  }
+
+
+}

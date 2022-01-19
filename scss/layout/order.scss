@@ -1,0 +1,87 @@
+.order {
+  background: #ECEEF2;
+  border-radius: 16px;
+  padding: rem(24px);
+  margin-bottom: rem(24px);
+  
+  &__col {
+    display: flex;
+
+    @include tablets {
+      flex-direction: column;
+    }
+
+    &--left {
+      margin-right: rem(32px);
+      max-width: 50%;
+
+      @include tablets {
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: rem(25px);
+      }
+    }
+  }
+
+  &__btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: rem(16px);
+  }
+
+  &__desc {
+    display: flex;
+    width: 100%;
+    height: rem(40px);
+
+    
+    &--icon {
+      width: rem(35px);
+      height: rem(37px);
+      @include phones {
+        width: 27px;
+        height: 37px;
+      }
+    }
+
+    &--text {
+      font-size: rem(14px);
+      line-height: rem(20px);
+      width: rem(325px);
+      color: rgba(0, 0, 0, 0.4);
+      margin-left: rem(16px);
+
+      @include phones {
+        width: 254px;
+      }
+    }
+  }
+
+  &__list{
+    padding-left: 32px;
+
+    &--title {
+      margin-bottom: rem(16px);
+      min-width: 100%;
+      line-height: rem(24px);
+    }
+    &--item{
+      margin-bottom: rem(16px);
+      line-height: rem(24px);
+      position: relative;
+
+      &:last-child{
+        margin-bottom: 0;
+      }
+
+      &::after{
+        content: url('/icons/stroke.svg');
+        position: absolute;
+        top: 0;
+        left: -32px;
+      }
+    }
+  }
+}

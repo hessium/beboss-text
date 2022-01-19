@@ -1,0 +1,109 @@
+.price {
+  background: rgba(30, 160, 30, 0.1);
+  border-radius: 16px;
+  padding: rem(24px);
+  padding-bottom: rem(34px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: rem(32px);
+  text-align:start;
+
+  @include phones {
+    padding: 24px;
+  }
+
+  &__title {
+    margin-bottom: rem(24px);
+    font-size: rem(24px);
+    text-align: left;
+
+    @include phones {
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+
+  &__list{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: rem(24px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+
+    &--item{
+      display: flex;
+    }
+  }
+
+  &__item{
+    margin-bottom: rem(16px);
+
+    @include phones {
+      display: flex;
+      flex-direction: column;
+      font-size: 16px;
+    }
+
+    &:last-child{
+      margin-bottom: 0;
+    }
+
+    &--title {
+      font-size: rem(16px);
+      color: rgba(0, 0, 0, 0.52);
+      margin-right: rem(24px);
+      min-width: rem(200px);
+      line-height: 24px;
+
+      @include phones {
+        margin-right: 0;
+        margin-bottom: 4px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  
+
+  &__btn {
+    margin-top:  rem(37px);
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+    @include phones {
+      margin-top: rem(25px);
+    }
+  }
+
+  &__link {
+    position: relative;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    
+
+    @include phones {
+      width: 50%;
+    }
+
+    &::before{
+      content: url('/icons/circle.svg');
+      top: -13px;
+      left: -67px;
+      position: absolute;
+      max-width: 100%;
+      max-height: 100%;
+      width: 50px;
+      height: 50px;
+      @include phones {
+        top:-3px;
+        left:-65px;
+      }
+    }
+  }
+}

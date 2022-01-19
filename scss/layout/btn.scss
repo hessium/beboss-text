@@ -1,0 +1,112 @@
+.btn{
+
+  &__voting {
+    border-radius: 50px;
+    width: rem(256px);
+    height: rem(60px);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 0;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    margin-bottom: rem(8px);
+    border: none;
+
+    @include desctops {
+      margin-bottom: 0;
+      margin-right: 5px;
+      width: rem(200px);
+    }
+
+    
+    @include tablets {
+      width: rem(60px);
+      
+    }
+
+    @include phones {
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    &:last-child{ 
+      margin-bottom: 0;
+    }
+
+    &--fb {
+      background: #1F3B74;
+    }
+
+    &--vk {
+      background: #27466A;
+    }
+
+    &--ok {
+      background: #D06313;
+    }
+  }
+
+  &__svg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #3B5998;
+    border-radius: 50%;
+    width: rem(60px);
+    height: rem(60px);
+    margin-right: rem(15px);
+
+
+    &--fb {
+      background: #3B5998;
+    }
+
+    &--vk {
+      background: #4C6C91;
+    }
+
+    &--ok {
+      background: #F68634;
+    }
+
+    @include tablets{ 
+      min-width: 100%;
+      min-height: 100%;
+    }
+  }
+
+  &__order {
+    background: #0D870D;
+    border-radius: 6px;
+    color: white;
+    width: 100%;
+    
+    @include phones {
+      width: 295px;
+    }
+  }
+
+  &__party {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    width: rem(240px);
+    color: rgba(0, 0, 0, 1);
+    font-weight: bold;
+
+    @include phones {
+      width: rem(343px);
+      margin-left: 26px;
+    }
+  }
+
+  &__text {
+    margin: 0;
+
+    @include tablets {
+      display: none;
+    }
+  }
+}
